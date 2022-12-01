@@ -15,3 +15,7 @@ int sumRange(int left, int right) {
 		return left + sumRange(left + 1, right);
 	}
 }
+
+int sumArray(int *arr, int size) {
+
+}
