@@ -35,5 +35,10 @@ int main() {
 
     delete[] arr;	
 	
+	//TASK D
+	std::cout << isAlphanumeric("ABCD") << std::endl;        // true (1)
+	std::cout << isAlphanumeric("Abcd1234xyz") << std::endl; // true (1)
+	std::cout << isAlphanumeric("KLMN 8-7-6") << std::endl;
+	
 	return 0;
 }

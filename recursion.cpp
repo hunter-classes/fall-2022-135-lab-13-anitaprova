@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <cctype>
 
 void printRange(int left, int right){
 	if (left <= right) {
@@ -29,6 +31,11 @@ int sumArray(int *arr, int size) {
 	return sumArrayInRange(arr, 0, size - 1);
 }
 
-bool isAlphanumeric(string s) {
-	
+bool isAlphanumeric(std::string s) {
+	if(s.length() == 0) {
+		return true;
+	}	
+	else {
+		return ( isalpha(s[0]) || isdigit(s[0]) ) && isAlphanumeric(s.substr(1));
+	}
 }
