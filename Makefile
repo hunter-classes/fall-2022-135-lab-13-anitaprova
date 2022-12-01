@@ -11,4 +11,4 @@ tests: tests.o recursion.o
 tests.o: tests.cpp doctest.h recursion.h
 
 clean:
-	rm -f main main.o recursion.o
+	rm -f main tests main.o recursion.o tests.o
