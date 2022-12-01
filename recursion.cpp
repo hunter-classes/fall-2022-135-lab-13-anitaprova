@@ -16,6 +16,19 @@ int sumRange(int left, int right) {
 	}
 }
 
-int sumArray(int *arr, int size) {
+int sumArrayInRange(int *arr, int left, int right) {
+	if(left == right) {
+		return arr[right];
+	}
+	else {
+		return arr[left] + sumArrayInRange(arr, left + 1, right);
+	}
+}
 
+int sumArray(int *arr, int size) {
+	return sumArrayInRange(arr, 0, size - 1);
+}
+
+bool isAlphanumeric(string s) {
+	
 }
