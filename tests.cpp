@@ -4,14 +4,14 @@
 #include <string>
 
 TEST_CASE("TASK A") {
-	CHECK(printRange(-2, 10) == "-2 -1 0 1 2 3 4 5 6 7 8 9 10");
-	CHECK(printRange(13, 15) == "13, 14, 15");
+	CHECK(printRange(-2, 10) == "-2 -1 0 1 2 3 4 5 6 7 8 9 10 ");
+	CHECK(printRange(13, 15) == "13 14 15 ");
 }
 
 TEST_CASE("TASK B") {
 	CHECK(sumRange(1, 3) == 6);
 	CHECK(sumRange(-2, 10) == 52);
-	CHECK(sumRange(50, 55) == 2);
+	CHECK(sumRange(50, 55) == 315);
 }
 
 TEST_CASE("TASK C") {
