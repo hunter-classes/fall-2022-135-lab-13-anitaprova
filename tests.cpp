@@ -6,6 +6,7 @@
 TEST_CASE("TASK A") {
 	CHECK(printRange(-2, 10) == "-2 -1 0 1 2 3 4 5 6 7 8 9 10 ");
 	CHECK(printRange(13, 15) == "13 14 15 ");
+	CHECK(printRange(10, 0) == "");
 }
 
 TEST_CASE("TASK B") {
@@ -16,20 +17,23 @@ TEST_CASE("TASK B") {
 
 TEST_CASE("TASK C") {
 	int size = 10;
-    int *arr = new int[size]; // allocate array dynamically
-    arr[0] = 12;
-    arr[1] = 17;
-    arr[2] = -5;
-    arr[3] = 3;
-    arr[4] = 7;
-    arr[5] = -15;
-    arr[6] = 27;
-    arr[7] = 5;
-    arr[8] = 13;
-    arr[9] = -21;
+    	int *arr = new int[size]; // allocate array dynamically
+    	arr[0] = 12;
+    	arr[1] = 17;
+    	arr[2] = -5;
+    	arr[3] = 3;
+    	arr[4] = 7;
+    	arr[5] = -15;
+    	arr[6] = 27;
+    	arr[7] = 5;
+    	arr[8] = 13;
+    	arr[9] = -21;
 
-    CHECK(sumArray(arr, size) == 43); // Add all elements
-    CHECK(sumArray(arr, 5) == 34); // Add up first five elements
+    	CHECK(sumArray(arr, size) == 43); // Add all elements
+    	CHECK(sumArray(arr, 5) == 34); // Add up first five elements
+
+	int myarr[] = {0, 55, 48, 89};
+	CHECK(sumArray(myarr, 4) == 192);
 }
 
 TEST_CASE("TASK D") {
