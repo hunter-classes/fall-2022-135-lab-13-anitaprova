@@ -11,11 +11,11 @@ Recursion lab
 #include <string>
 #include <cctype>
 
-void printRange(int left, int right){
-	if (left <= right) {
-		std::cout << left << " ";
-		printRange(left + 1, right);
+std::string printRange(int left, int right){
+	if (left > right) {
+		return "";
 	}
+	return std::to_string(left) + " " + printRange(left + 1, right);
 }
 
 int sumRange(int left, int right) {

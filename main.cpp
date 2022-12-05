@@ -3,8 +3,7 @@
 
 int main() {
 	//TASK A
-	printRange(-2, 10);
-	std::cout << "\n";
+	std::cout << printRange(-2, 10) << std::endl;
 	
 	//TASK B
 	int x = sumRange(7, 3);
