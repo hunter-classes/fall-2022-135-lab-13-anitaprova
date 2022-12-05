@@ -7,7 +7,7 @@ int main() {
 	std::cout << "\n";
 	
 	//TASK B
-	int x = sumRange(1, 3);
+	int x = sumRange(7, 3);
 	std::cout << "This is " << x << std::endl;   // 6
 	
 	int y = sumRange(-2, 10);

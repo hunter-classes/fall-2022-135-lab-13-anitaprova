@@ -1,3 +1,12 @@
+/*
+Author: Anita Prova
+Course: CSCI-135
+Instructor: Mike Zamansky
+Assignment: Lab 13
+
+Recursion lab
+*/
+
 #include <iostream>
 #include <string>
 #include <cctype>
@@ -10,6 +19,10 @@ void printRange(int left, int right){
 }
 
 int sumRange(int left, int right) {
+	if(left > right) {
+		return 0;
+	}
+
 	if(left == right) {
 		return right;
 	}
