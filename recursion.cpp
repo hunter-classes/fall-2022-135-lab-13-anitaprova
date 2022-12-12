@@ -52,3 +52,16 @@ bool isAlphanumeric(std::string s) {
 		return ( isalpha(s[0]) || isdigit(s[0]) ) && isAlphanumeric(s.substr(1));
 	}
 }
+
+bool nestedParens(std::string s) {
+	if (s == ""){
+		return true;
+	}
+
+	if(s[0] == '(' && s[s.length()-1] == ')') {
+		return nestedParens(s.substr(1, s.length()-2));
+	}
+	else {
+		return false;
+	}
+}

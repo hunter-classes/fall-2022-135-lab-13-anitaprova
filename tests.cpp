@@ -42,3 +42,14 @@ TEST_CASE("TASK D") {
 	CHECK(isAlphanumeric("KLMN 8-7-6") == 0);
 	CHECK(isAlphanumeric("CUPCAKES!@#$%^&") == 0);
 }
+
+TEST_CASE("TASK E") {
+	CHECK(nestedParens("((()))") == 1);
+	CHECK(nestedParens("()") == 1);
+	CHECK(nestedParens("") == 1);
+
+	CHECK(nestedParens("aAaAAAAAAaaa)") == 0);
+	CHECK(nestedParens(")(") == 0);
+	CHECK(nestedParens(")))") == 0);
+	CHECK(nestedParens("())") == 0);
+}
